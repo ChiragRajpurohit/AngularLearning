@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  constructor() { }
+allowNewServer = false;
+
+// This bollean statement will help with accessing the button using property binding
+  constructor() { 
+    setTimeout(() => {
+      this.allowNewServer = true;
+    },2000);
+  }
+
 
   ngOnInit(): void {
   }
