@@ -9,6 +9,7 @@ export class ServersComponent implements OnInit {
 
 allowNewServer = false;
 
+serverCreationStatus  = ' No server was created';
 // This bollean statement will help with accessing the button using property binding
   constructor() { 
     setTimeout(() => {
@@ -16,6 +17,9 @@ allowNewServer = false;
     },2000);
   }
 
+  onCreateServer(){
+    this.serverCreationStatus = 'server was created!!!'
+  }
 
   ngOnInit(): void {
   }
